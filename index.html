@@ -1,22 +1,118 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<script src="js/jquery-3.5.1.min.js"></script>
-	</head>
-	<body>
-		<form action="#" class="contact1-form">
-			<label for="nombre">First name:</label><br>
-			<input type="text" id="nombre" name="nombre" value="John"><br>
-			<label for="apellido">Last name:</label><br>
-			<input type="text" id="apellido" name="apellido" value="Doe"><br><br>
-			<label for="contenido">Contenido:</label><br>
-			<input type="text" id="contenido" name="contenido" value="Doe"><br><br>
-			<label for="email">Email:</label><br>
-			<input type="text" id="email" name="email" value="Doe"><br><br>
-			<input type="submit" value="Submit">
-		</form> 
+    <head>
+        <title>Curriculum Vitae</title>
+        <style>
+            body{
+                background-image: url("hulk.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: green;
+            }
+            .contenedor{
+             height: 800px;
+             width: 500px;   
+             background-color: white;
+             margin-top: 200px;
+             margin: 0 auto;
 
+             -webkit-box-shadow: -41px 50px 47px -11px rgba(0,0,0,1);
+-moz-box-shadow: -41px 50px 47px -11px rgba(0,0,0,1);
+box-shadow: -41px 50px 47px -11px rgba(0,0,0,1);
 
-		<script src="js/main.js"></script>	
-	</body>
+border-radius: 14px;
+            }
+
+            .titulo{
+                height: 100px;
+                width: 300px;
+              
+                margin: 0 auto;
+            }
+            .titulo > h1{
+                color:red;
+                text-align: center;
+            }
+            
+            .izquierda{
+                margin-left: 5px;
+                height: 500px;
+                width: 240px;
+                text-align: right;
+                display: inline-block;
+            }
+            .izquierda > h2{
+                margin-right: 10px;
+            }
+            .izquierda > p{
+                margin-right: 10px;
+            }
+
+            .derecha{
+                height: 500px;
+                width: 240px;
+              
+                display: inline-block;
+            }
+            .derecha > h2{
+                margin-left: 10px;
+            }
+            .derecha > p{
+                margin-left: 10px;
+            }
+
+            .imagen-flotante {
+                height: 20px;
+                background-color: wheat;
+                background-color: transparent;
+                position: absolute;
+            }
+            #contenido{
+                display:flex;
+            }
+
+            .imagen-iron {
+                height: 120px;
+                background-color: rgb(255, 255, 255);
+                border-radius:50%;
+                
+            }
+            .iron{
+                text-align:center;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="imagen-flotante ">
+            <img src="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" alt="" class="imagen-flotante" >
+        </div>
+        <div class="contenedor">
+            <div class="titulo">
+                <h1>SARAH WILLIAM</h1>
+            </div>
+           
+            <div class="iron">
+                <img src="iron.png" alt="" class="imagen-iron">
+            </div>
+
+            <div id="contenido">
+                <div class="izquierda">
+                    <h2>PROFILE</h2>
+                    <p>What is Lorem Ipsum?
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+                        </p><p>like Aldus PageMaker including versions of Lorem Ipsum</p>
+                </div>
+                <div class="derecha">
+                    <h2>EXPERIENCE</h2>
+                    <p>What is Lorem Ipsum?
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </body>
 </html>
